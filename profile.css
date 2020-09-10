@@ -1,0 +1,26 @@
+body{
+  background-color:#fce373;
+}
+
+.text{
+margin-top:60px;
+}
+.pro{
+  font-family: 'Kaushan Script', cursive;
+  
+ margin-left:500px;
+  font-size:25px;
+}
+
+img{
+ float:left;
+  
+  margin-right:200px;
+  vertical-align:middle
+}
+.ex{
+  font-family: 'Kaushan Script', cursive;
+  font-size:25px;
+ 
+margin-left:80px;
+}

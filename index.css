@@ -1,0 +1,231 @@
+body{
+  background-color:#fce373;
+  width:100%;
+  margin: 0em;
+}
+header{
+  margin-left:300px;
+  display:inline-block;
+}
+
+.menu{
+  color:black;
+  font-size:30px;
+  text-decoration:none;
+  font-weight:bold;
+  font-family: 'Caveat', cursive;
+  margin-right:30px;
+}
+.menu:hover{
+  color:red;
+}
+
+
+.circle-white-left{
+  width: 40px;
+  height: 40px;
+  position:absolute; 
+  top:13px;
+  left:53px;
+  background-color: white;
+  border-radius: 50%;/* ←円を作る */
+}
+
+
+.circle-white-right{
+  width: 40px;
+  height: 40px;
+  position:absolute; 
+  top:13px;
+  left:54px;
+  background-color: white;
+  border-radius: 50%;/* ←円を作る */
+  display:inline-block;
+}
+
+
+.circle-black-left{
+  width: 150px;
+  height: 150px;
+  position:absolute; 
+  top:200px;
+  left:400px;
+  background-color: black;
+  border-radius: 50%;/* ←円を作る */
+  z-index:-3;
+}
+.circle-black-left:hover{
+  width:170px;
+height:7px;
+margin-top:65px;
+}
+.circle-black-left:hover > .circle-white-left{
+  background-color:#fce373;
+}
+.circle-black-right{
+  width: 150px;
+  height: 150px;
+  position:absolute; 
+  top:200px;
+  left:900px;
+  background-color: black;
+  border-radius: 50%;/* ←円を作る */
+  z-index:-3;
+}
+.circle-black-right:hover{
+  width:170px;
+height:7px;
+margin-top:65px;
+
+}
+.circle-black-right:hover > .circle-white-right{
+  background-color:#fce373;
+}
+
+.circle-left {
+  width: 200px;
+  height: 200px;
+  position:absolute; 
+  top:400px;
+  left:200px;
+  background-color: red;
+  border-radius: 50%;/* ←円を作る */
+  transition-duration: 0.1s;
+}
+.circle-right{
+  width: 200px;
+  height: 200px;
+  position:absolute; 
+  top:400px;
+  left:1050px;
+  background-color: red;
+  border-radius: 50%;/* ←円を作る */
+  transition-duration: 0.1s;
+}
+
+ .circle-left:hover{
+   transform: scale(1.3);
+   transition-duration: 1.2s;
+   
+ }
+ .circle-right:hover{
+  transform: scale(1.3);
+  transition-duration: 1.2s;
+   
+}
+.triangle-left {
+  
+      background: #fce373;
+  
+      width: 250px;
+  
+      height: 250px;
+  
+      border:#fce373  1px solid;
+  
+      float:left;
+  
+      position: relative;
+  
+  }
+  
+   
+  
+  /* ラベル部分 左上に表示 */
+  
+  .triangle-left::before {
+  
+      content: "";
+  
+      top: 0;
+  
+      left: 0;
+  
+      border-bottom: 16em solid transparent;
+  
+      border-left: 16em solid black; /* ラベルの色はここで変更 */
+  
+      position: absolute;
+  
+      z-index: 100;
+  
+  }
+  
+  .triangle-left::after {
+  
+      content: "";
+  
+      display: block;
+  
+      top: 5px;
+  
+      transform: rotate(-45deg);
+  
+      color: #fff; /* 文字色はここで変更 */
+  
+      left: 0;
+  
+      position: absolute;
+  
+      z-index: 101;
+  
+  }
+  .triangle-right {
+  
+    background: #fce373;
+
+    width: 250px;
+
+    height: 250px;
+
+    border: #fce373 1px solid;
+
+    
+float:right;
+
+    position: relative;
+
+}
+
+ 
+
+/* ラベル部分 右上に表示 */
+
+.triangle-right::before {
+
+    content: "";
+
+    top: 0;
+
+    right: 0;
+
+    border-bottom: 16em solid transparent;
+
+    border-right: 16em solid black; /* ラベルの色はここで変更 */
+
+    position: absolute;
+
+    z-index: 100;
+
+}
+
+.triangle-right::after {
+
+    content: "";
+
+    display: block;
+
+    top: 5px;
+
+    transform: rotate(45deg);
+
+    color: #fff; /* 文字色はここで変更 */
+
+    right: 0;
+
+    position: absolute;
+
+    z-index: 101;
+
+}
+
